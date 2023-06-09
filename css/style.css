@@ -58,7 +58,7 @@ nav ul a {
    display: flex;
    width: auto;
    gap: 10rem;
-   height: 41rem;
+   height: 33rem;
    justify-content: center;
    position: relative;
 }
@@ -69,20 +69,22 @@ nav ul a {
    gap: 10rem 8rem;
    justify-content: center;
    position: relative;
+   margin-bottom: 2rem;
 }
 
 .home-img img {
-   height: 300px;
-   width: auto;
+   /* height: 300px;
+   width: 23rem; */
+   height: auto;
+   width: 17rem;
+   border-radius: 2rem;
 }
-
 
 .text-content {
    display: flex;
    flex-direction: column;
-   width: auto;
-   /* max-width: 31rem; */
-   padding: 1rem;
+   /* width: auto; */
+   max-width: 31rem;
    height: 20;
    position: relative;
 }
@@ -118,7 +120,6 @@ nav ul a {
 .skills {
    align-items: center;
    bottom: 0;
-   padding: 1rem;
    color: #767676;
    display: flex;
    font-size: 1.7rem;
@@ -138,7 +139,7 @@ nav ul a {
 .skills ul {
    display: flex;
    flex-wrap: wrap;
-   gap: 2.5rem;
+   gap: 1rem 2.5rem;
    list-style: none;
 }
 
@@ -452,6 +453,11 @@ footer .connect-us ul li a:hover {
 }
 
 @media(max-width:1020px) {
+
+   .home-img img {
+      height: auto;
+   }
+
    .about {
       padding: 8rem 0px;
    }
@@ -527,6 +533,10 @@ footer .connect-us ul li a:hover {
       text-align: center;
    }
 
+   .home-img img {
+      height: auto;
+   }
+
    .home .text-content h1 {
       color: #2d2e32;
       font-size: 3.5rem;
@@ -547,12 +557,6 @@ footer .connect-us ul li a:hover {
       margin-top: -2rem;
    }
 
-   .home ul li {
-      padding: 2rem 0;
-      display: inline-block;
-      margin-right: 2px;
-   }
-
    .home .connect-us ul li a {
       display: inline-block;
       width: 28px;
@@ -569,6 +573,7 @@ footer .connect-us ul li a:hover {
    .skills {
       flex-direction: column;
       position: static;
+      align-items: center;
    }
 
    .skills p {
@@ -580,16 +585,18 @@ footer .connect-us ul li a:hover {
       padding-right: 0;
    }
 
-   .skills ul {
+   .skills ul li {
       justify-content: center;
+      padding: 2rem 0;
+      display: inline-block;
    }
 
    .skills ul li img {
       text-align: center;
       justify-content: center;
       display: inline-block;
-      width: 45px;
-      height: 45px;
+      width: 3rem;
+      height: 3rem;
    }
 
    .about-img {
@@ -650,6 +657,12 @@ footer .connect-us ul li a:hover {
 }
 
 @media(max-width:600px) {
+
+   .home-img img {
+      height: 300px;
+      width: 14rem;
+   }
+
    .project-content {
       text-align: center;
    }
@@ -684,8 +697,9 @@ footer .connect-us ul li a:hover {
       padding: 0 1.7rem;
    }
 
-   .home img {
-      height: 250px;
+   .home-img img {
+      height: 15rem;
+      width: auto;
    }
 
    .home .text-content h1 {
@@ -694,6 +708,11 @@ footer .connect-us ul li a:hover {
       line-height: 1.2;
       margin-bottom: 1.5rem;
       margin-top: 0.5rem;
+   }
+
+   .skills ul li img {
+      width: auto;
+      height: 2rem;
    }
 
    .main-img {

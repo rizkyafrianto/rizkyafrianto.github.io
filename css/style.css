@@ -56,7 +56,7 @@ nav ul a {
 .content {
    align-items: center;
    display: flex;
-   width: 59rem;
+   width: auto;
    gap: 10rem;
    height: 41rem;
    justify-content: center;
@@ -80,7 +80,8 @@ nav ul a {
 .text-content {
    display: flex;
    flex-direction: column;
-   max-width: 31rem;
+   width: auto;
+   /* max-width: 31rem; */
    padding: 1rem;
    height: 20;
    position: relative;
@@ -282,9 +283,9 @@ ul {
 }
 
 .projects-grid .pro_img {
-   background-color: rgba(117, 117, 117, 0.2);
+   /* background-color: rgba(117, 117, 117, 0.2); */
    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
-   height: 22.5rem;
+   height: auto;
    width: 25rem;
    border-radius: 1.7rem;
    overflow: hidden;
@@ -474,11 +475,17 @@ footer .connect-us ul li a:hover {
    }
 
    .projects-grid .pro_1 {
-      height: 56rem;
-      width: fit-content;
+      height: auto;
+      /* width: fit-content; */
+      width: 31rem;
       flex-direction: column !important;
       gap: 3rem;
       margin: 0px auto;
+   }
+
+   .projects-grid .pro_img {
+      width: auto;
+      height: auto;
    }
 
    .projects-grid .pro_text {
@@ -605,10 +612,12 @@ footer .connect-us ul li a:hover {
    .projects-grid .pro_1 {
       /* width: auto; */
       width: 31rem;
+      height: auto;
    }
 
    .projects-grid .pro_img {
       width: auto;
+      height: auto;
    }
 
    .contact-icons {
